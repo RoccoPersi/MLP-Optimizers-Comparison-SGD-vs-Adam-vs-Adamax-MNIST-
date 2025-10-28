@@ -64,7 +64,7 @@ Apri ed esegui il notebook progetto_esame.ipynb in un ambiente Jupyter (es. Jupy
 
 Il notebook eseguirà l'addestramento per ciascun ottimizzatore e per entrambe le architetture di rete (uno e due strati nascosti), mostrando i risultati numerici e i grafici comparativi.
 
-Risultati (Osservati dal Notebook)
+# Risultati (Osservati dal Notebook o dalla cartella Plot)
 
 Dai risultati mostrati nel notebook, si osserva generalmente che:
 
