@@ -14,55 +14,55 @@ AdaMax: Implementato nella classe AdaMaxOpt nel file adamax.py.
 
 Il notebook progetto_esame.ipynb orchestra l'esperimento:
 
-Carica il dataset MNIST.
+- Carica il dataset MNIST.
 
-Crea istanze della rete MLP (sia con uno che con due strati nascosti) per ciascun ottimizzatore, specificando i relativi iperparametri (learning rate, beta1, beta2, ecc.).
+- Crea istanze della rete MLP (sia con uno che con due strati nascosti) per ciascun ottimizzatore, specificando i relativi iperparametri (learning rate, beta1, beta2, ecc.).
 
-Addestra ciascuna rete per un numero definito di epoche, misurando il tempo impiegato per epoca e la precisione (accuracy) sul set di test dopo ogni epoca.
+- Addestra ciascuna rete per un numero definito di epoche, misurando il tempo impiegato per epoca e la precisione (accuracy) sul set di test dopo ogni epoca.
 
-Calcola e stampa il tempo totale di addestramento e l'accuratezza media finale per ciascun ottimizzatore.
+- Calcola e stampa il tempo totale di addestramento e l'accuratezza media finale per ciascun ottimizzatore.
 
-Genera grafici comparativi utilizzando Matplotlib per visualizzare:
+- Genera grafici comparativi utilizzando Matplotlib per visualizzare:
 
-Tempo di addestramento per epoca.
+- Tempo di addestramento per epoca.
 
-Accuratezza sul set di test per epoca.
+- Accuratezza sul set di test per epoca.
 
 # File Inclusi
 
-progetto_esame.ipynb: Il notebook Jupyter principale che esegue l'addestramento e la valutazione comparativa.
+- progetto_esame.ipynb: Il notebook Jupyter principale che esegue l'addestramento e la valutazione comparativa.
 
-mlp.py: Implementazione della rete MLP base con ottimizzatore SGD.
+- mlp.py: Implementazione della rete MLP base con ottimizzatore SGD.
 
-mlp_adam_opt.py: Implementazione della rete MLP con ottimizzatore Adam.
+- mlp_adam_opt.py: Implementazione della rete MLP con ottimizzatore Adam.
 
-adamax.py: Implementazione della rete MLP con ottimizzatore AdaMax.
+- adamax.py: Implementazione della rete MLP con ottimizzatore AdaMax.
 
-mnist_loader.py: (Presumibilmente presente) Utility per caricare e preparare il dataset MNIST (basato sul codice di M. Nielsen).
+- mnist_loader.py: (Presumibilmente presente) Utility per caricare e preparare il dataset MNIST (basato sul codice di M. Nielsen).
 
 # Dipendenze
 
-Python 3
+- Python 3
 
-NumPy
+- NumPy
 
-Matplotlib
+- Matplotlib
 
-gzip (per mnist_loader.py)
+- gzip (per mnist_loader.py)
 
-pickle (per mnist_loader.py)
+- pickle (per mnist_loader.py)
 
-Utilizzo
+# Utilizzo
 
-Assicurati di avere tutte le dipendenze installate (puoi usare pip install numpy matplotlib).
+- Assicurati di avere tutte le dipendenze installate (puoi usare pip install numpy matplotlib).
 
-Scarica il dataset MNIST (mnist.pkl.gz) e assicurati che sia accessibile da mnist_loader.py (solitamente nella stessa directory o in una sottocartella specificata). Il loader potrebbe anche scaricarlo automaticamente se configurato per farlo.
+- Scarica il dataset MNIST (mnist.pkl.gz) e assicurati che sia accessibile da mnist_loader.py (solitamente nella stessa directory o in una sottocartella specificata). Il loader potrebbe anche scaricarlo automaticamente se configurato per farlo.
 
-Assicurati che i file .py (mlp.py, mlp_adam_opt.py, adamax.py, mnist_loader.py) siano nella stessa directory del notebook o nel PYTHONPATH.
+- Assicurati che i file .py (mlp.py, mlp_adam_opt.py, adamax.py, mnist_loader.py) siano nella stessa directory del notebook o nel PYTHONPATH.
 
-Apri ed esegui il notebook progetto_esame.ipynb in un ambiente Jupyter (es. Jupyter Notebook, JupyterLab, Google Colab).
+- Apri ed esegui il notebook progetto_esame.ipynb in un ambiente Jupyter (es. Jupyter Notebook, JupyterLab, Google Colab).
 
-Il notebook eseguirà l'addestramento per ciascun ottimizzatore e per entrambe le architetture di rete (uno e due strati nascosti), mostrando i risultati numerici e i grafici comparativi.
+- Il notebook eseguirà l'addestramento per ciascun ottimizzatore e per entrambe le architetture di rete (uno e due strati nascosti), mostrando i risultati numerici e i grafici comparativi.
 
 # Risultati (Osservati dal Notebook o dalla cartella Plot)
 
